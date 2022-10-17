@@ -9,9 +9,9 @@ echo "<h1> Exercici 1 Tema PHP_Objectes.</h1> ";
 
 Class Employee{
 
-    public $nom;
+    private $nom;
     
-    public $sou;
+    private $sou;
 
     public function nom ($nom){
 
@@ -29,16 +29,16 @@ Class Employee{
 
             $this -> nom = $nom = "Gabriel Farrus"; 
 
-            $this -> sou = $sou = 7000;
+            $this -> sou = $sou = 4000;
         }
 
-        function print ($nom, $sou){
+        function print ( $sou){
 
             
             if($sou <= 6000){
-                echo $nom." No pagues impostos, ja que el teu sou, no supera els 6000€ ".$sou.'<br />';
+                echo $this -> nom.". No pagues impostos, ja que el teu sou, no supera els 6000€. ".$sou."€ al mes de sou.".'<br />';
             } else {
-                echo $nom." Pagues impostos, ja que el teu sou,  supera els 6000€ ".$sou.'<br />';
+                echo $this -> nom.". Pagues impostos, ja que el teu sou, supera els 6000€. ".$sou. "€ al mes de sou.".'<br />';
             }   
         }
 
@@ -46,7 +46,7 @@ Class Employee{
 
             //declaracio dels objectes.
 
-        $exercici = new Employee();
+            $exercici = new Employee();
 
          echo $exercici->print($nom = "Gabriel Farrus", $sou = 7000);
 
