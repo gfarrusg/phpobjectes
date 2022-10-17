@@ -6,7 +6,7 @@ echo "<h1> Exercici 2 Tema PHP_Objectes.</h1> ";
 // Defineix dues subclasses; Triangle i Rectangle que heretin de Shape i que calculin respectivament l'àrea de la forma area().
 // A l'arxiu main defineix dos objectes, un triangle i un rectangle i truca al mètode area de cadascun.
 
-Class Shape{
+  abstract Class Shape{
 
     public $ample;
     
