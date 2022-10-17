@@ -4,7 +4,7 @@
 require_once ("ClassShape.php");
 class Rectangle extends Shape{
     
-    protected $Arearectangle;
+    protected $areaRectangle;
 
     function __construct (int $ample, int $alt){
 
@@ -12,9 +12,9 @@ class Rectangle extends Shape{
 
     }
 
-    public function rectangle($ample, $alt){
+    public function calcularArea($ample, $alt){
         $arearectangle = ($ample * $alt);
-        echo "Un rectangle de base $ample i alçada $alt té un àrea de .";
+        echo "Un rectangle de base $ample i alçada $alt té un àrea de.";
         return $arearectangle;
         }
 
