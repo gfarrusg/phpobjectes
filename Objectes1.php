@@ -27,27 +27,58 @@ Class Employee{
 
         function initialize ($nom, $sou){
 
-            $this -> nom = $nom = "Gabriel Farrus"; 
+            $this -> nom = $nom; 
 
-            $this -> sou = $sou = 4000;
+            $this -> sou = $sou;
         }
 
         function print ( $sou){
 
+            print $this -> nom;
             
             if($sou <= 6000){
-                echo $this -> nom.". No pagues impostos, ja que el teu sou, no supera els 6000€. ".$sou."€ al mes de sou.".'<br />';
+                print ". No pagues impostos, ja que el teu sou, no supera els 6000€. ".$sou."€ al mes de sou.".'<br />';
             } else {
-                echo $this -> nom.". Pagues impostos, ja que el teu sou, supera els 6000€. ".$sou. "€ al mes de sou.".'<br />';
+                print ". Pagues impostos, ja que el teu sou, supera els 6000€. ".$sou. "€ al mes de sou.".'<br />';
             }   
         }
 
     }
 
-            //declaracio dels objectes.
+    $exercici = new Employee();
 
-            $exercici = new Employee();
+    $exercici-> initialize('Gabriel Farrus', 7500);
 
-         echo $exercici->print($nom = "Gabriel Farrus", $sou = 7000);
+    $exercici-> print(7500);
+
+    $exercici-> initialize('Carlos Perez', 3500);
+
+    $exercici-> print(3500);
+
+
+
+    //function print (){
+
+   // print $this -> nom;
+
+   // if( this -> sou <= 6000){
+       // print ". No pagues impostos, ja que el teu sou, no supera els 6000€. ".$sou."€ al mes de sou.".'<br />';
+   // } else {
+      //  print ". Pagues impostos, ja que el teu sou, supera els 6000€. ".$sou. "€ al mes de sou.".'<br />';
+   // }   
+  //  }
+    
+   // $exercici = new Employee();
+    
+            // $exercici-> initialize('Gabriel Farrus', 7500);
+    
+           //  $exercici-> print();
+           
+    
+    
+    
+    
+        //declaracio dels objectes.
 
 ?>
+
