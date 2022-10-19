@@ -14,8 +14,8 @@ class Triangle extends Shape{
     }
     public function calcularArea($ample, $alt){
         $areatriangle = ($ample * $alt) / 2;
-        echo "Un triangle de base $ample i alçada $alt té un àrea de.";
-        return  $areatriangle ;
+        echo "Un triangle de base $ample i alçada $alt té un àrea de ";
+        return  $areatriangle.'<br />' ;
         }
 
     
