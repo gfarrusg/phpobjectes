@@ -14,8 +14,8 @@ class Rectangle extends Shape{
 
     public function calcularArea($ample, $alt){
         $arearectangle = ($ample * $alt);
-        echo "Un rectangle de base $ample i alçada $alt té un àrea de.";
-        return $arearectangle;
+        echo "Un rectangle de base $ample i alçada $alt té un àrea de ";
+        return $arearectangle.'<br />';
         }
 
 }
