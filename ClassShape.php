@@ -8,9 +8,9 @@ echo "<h1> Exercici 2 Tema PHP_Objectes.</h1> ";
 
   abstract Class Shape{
 
-    public $ample;
+    private $ample;
     
-    public $alt;
+    private $alt;
 
     function __construct (int $ample, int $alt){
 
@@ -18,15 +18,10 @@ echo "<h1> Exercici 2 Tema PHP_Objectes.</h1> ";
         $this-> alt = $alt;
     }
 
-    public function getdades(){
-
-        $dades = "
-            <h2> Centimetres de l'amplada i l'altura:  </h2>
-            AMPLE = {$this -> ample}<br>
-            ALTURA = {$this-> alt}<br>
-        ";
-            return $dades;
-    }
+    abstract protected function calcularArea(int $ample, int $alt);
+        
+        
+    
 
 }
 
