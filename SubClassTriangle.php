@@ -7,17 +7,15 @@ class Triangle extends Shape{
 
     protected $areaTriangle;
 
-    function __construct (int $ample, int $alt){
-
-        parent::__construct($ample,$alt);
-
-    }
-    public function calcularArea($ample, $alt){
-        $areatriangle = ($ample * $alt) / 2;
-        echo "Un triangle de base $ample i alçada $alt té un àrea de ";
+    
+    public function calcularArea(){
+        $areatriangle = ($this-> ample * $this -> alt) / 2;
+        echo "El triangle te una area de: ";
         return  $areatriangle.'<br />' ;
-        }
+    }
+
+}
 
     
-}
+
 ?>
