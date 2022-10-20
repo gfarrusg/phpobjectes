@@ -4,15 +4,16 @@ require_once("SubClassTriangle.php");
 
     $objTriangle = new Triangle (2, 4);
 
-    echo $objTriangle-> calcularArea (2, 4);
+    echo $objTriangle-> calcularArea ();
 
 require_once("SubClassRectangle.php");
 
-    $objRectangle = new Rectangle ( 4, 8);
+    $objRectangle = new Rectangle (4, 8);
 
     
-    echo $objRectangle-> calcularArea (4,8);
-
+    echo $objRectangle-> calcularArea ();
+    
+    
     
 
     
@@ -20,9 +21,7 @@ require_once("SubClassRectangle.php");
 
 
 
-    // $objetRectangle = new Rectangle (8,16);
-
-    // echo $objRectangle-> getdades();
+    
 
     
 
