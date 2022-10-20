@@ -13,18 +13,7 @@ Class Employee{
     
     private $sou;
 
-    public function nom ($nom){
-
-        $this -> nom = $nom; 
-    }
-
-    public function sou ($sou){
-       
-        $this -> sou = $sou;
-    }
-
-
-
+    
         function initialize ($nom, $sou){
 
             $this -> nom = $nom; 
@@ -32,53 +21,39 @@ Class Employee{
             $this -> sou = $sou;
         }
 
-        function print ( $sou){
+        
+        function print (){
 
             print $this -> nom;
-            
-            if($sou <= 6000){
-                print ". No pagues impostos, ja que el teu sou, no supera els 6000€. ".$sou."€ al mes de sou.".'<br />';
+
+             if( $this-> sou <= 6000){
+                 print ". No pagues impostos, ja que el teu sou, no supera els 6000€. ".$this-> sou."€ al mes de sou.".'<br />';
             } else {
-                print ". Pagues impostos, ja que el teu sou, supera els 6000€. ".$sou. "€ al mes de sou.".'<br />';
-            }   
+                 print ". Pagues impostos, ja que el teu sou, supera els 6000€. ".$this-> sou. "€ al mes de sou.".'<br />';
+                }   
+            }
         }
 
-    }
+         //declaracio dels objectes.
 
-    $exercici = new Employee();
-
-    $exercici-> initialize('Gabriel Farrus', 7500);
-
-    $exercici-> print(7500);
-
-    $exercici-> initialize('Carlos Perez', 3500);
-
-    $exercici-> print(3500);
-
-
-
-    //function print (){
-
-   // print $this -> nom;
-
-   // if( this -> sou <= 6000){
-       // print ". No pagues impostos, ja que el teu sou, no supera els 6000€. ".$sou."€ al mes de sou.".'<br />';
-   // } else {
-      //  print ". Pagues impostos, ja que el teu sou, supera els 6000€. ".$sou. "€ al mes de sou.".'<br />';
-   // }   
-  //  }
+            $exercici = new Employee();
     
-   // $exercici = new Employee();
+             $exercici-> initialize('Gabriel Farrus', 7500);
     
-            // $exercici-> initialize('Gabriel Farrus', 7500);
+             $exercici-> print();
+             
+             $exercici-> initialize('Carlos Perez', 1000);
     
-           //  $exercici-> print();
+             $exercici-> print();
            
+
+
+
+    
+      
     
     
-    
-    
-        //declaracio dels objectes.
+       
 
 ?>
 
