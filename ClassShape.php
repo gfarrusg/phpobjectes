@@ -8,17 +8,20 @@ echo "<h1> Exercici 2 Tema PHP_Objectes.</h1> ";
 
   abstract Class Shape{
 
-    private $ample;
+    protected $ample;
     
-    private $alt;
+    protected $alt;
 
-    function __construct (int $ample, int $alt){
+    protected $area;
 
-        $this -> ample = $ample;
+    public function __construct ($ample,$alt){
+
+        $this-> ample = $ample;
         $this-> alt = $alt;
     }
 
-    abstract protected function calcularArea(int $ample, int $alt);
+    
+    abstract protected function calcularArea();
         
         
     
