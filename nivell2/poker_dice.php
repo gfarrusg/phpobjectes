@@ -1,13 +1,14 @@
 <?php
     
-    class PokerDice{
+     class PokerDice{
         
-        private $number;
-        private $nameFace;
-        private $totalThrow;
+        protected $number;
+        protected $nameFace;
+        protected $totalThrow;
         
         public function throw(){
-            $this->number=(rand(1, 6));
+           
+            $this -> number=(rand(1, 6)); 
          
         }
         
@@ -32,47 +33,30 @@
            
         }
        
-           public function getTotalThrows(){
-           
-            echo 'Total throws: ' .$this->totalThrow;
          
-            }
+       public function getTotalThrows($dice1, $dice2, $dice3, $dice4, $dice5) {
+            printf("The result of the throw of the five dice is: " . "\n");
+            print_r($dice1->shapeName($dice1->throw()));
+            print_r($dice2->shapeName($dice2->throw()));
+            print_r($dice3->shapeName($dice3->throw()));
+            print_r($dice4->shapeName($dice4->throw()));
+            print_r($dice5->shapeName($dice5->throw()));
+            print_r("\n");
     
     }
+
+}
+
     
-    echo 'dice 1';
-    echo '<br>';
-    $roll = new PokerDice();
-    $roll -> throw();
-    $roll -> shapeName();
+     $dice1 = new PokerDice;
+     $dice2 = new PokerDice;
+     $dice3 = new PokerDice;
+     $dice4 = new PokerDice;
+     $dice5 = new PokerDice;
+
+              
     
-    echo '<br>';
-    echo 'dice 2';
-    echo '<br>';
-    $roll -> throw();
-    $roll -> shapeName();
+
+      
     
-    echo '<br>';
-    echo 'dice 3';
-    echo '<br>';
-    $roll -> throw();
-    $roll -> shapeName();
-    
-    echo '<br>';
-    echo 'dice 4';
-    echo '<br>';
-    $roll -> throw();
-    $roll -> shapeName();
-    
-    echo '<br>';
-    echo 'dice 5';
-    echo '<br>';
-    $roll -> throw();
-    $roll -> shapeName();
-    
-    echo '<br>';
-    $roll -> getTotalThrows();
-   
 ?>
-
-
